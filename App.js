@@ -1,29 +1,16 @@
-// In App.js in a new project
-
 import * as React from 'react';
 import { View, Text, Button, StyleSheet, SafeAreaView } from 'react-native';
-//import { SafeAreaView } from '@react-navigation';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-//import { Ionicons } from '@expo/vector-icons';
-import SaglıkDurumu from './screens/saglıkDurumu';
+import HomeScreen from './screens/saglıkDurumu';
 import Yogunluk from './screens/yogunluk';
+import Yakınlarım from './screens/yakınlarım';
+import Hesabım from './screens/hesabım';
 import { FontAwesome } from '@expo/vector-icons';
 import DailyDatas from './screens/yogunluk';
-const Tab = createBottomTabNavigator();
 
-function HomeScreen({ route, navigation }) {
-  if (route.name == 'Sağlık Durumu') {
-    return <SaglıkDurumu />;
-  } else {
-    return <Yogunluk />;
-  }
-}
-/* function ShowNumbers({ route, navigation }) {
-  return <Yogunluk />;
-} */
-const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
 
 function App() {
   return (
@@ -53,9 +40,9 @@ function App() {
           })}
         >
           <Tab.Screen name='Sağlık Durumu' component={HomeScreen} />
-          <Tab.Screen name='Yoğunluk' component={HomeScreen} />
-          <Tab.Screen name='Yakınlarım' component={HomeScreen} />
-          <Tab.Screen name='Hesabım' component={HomeScreen} />
+          <Tab.Screen name='Yoğunluk' component={Yogunluk} />
+          <Tab.Screen name='Yakınlarım' component={Yakınlarım} />
+          <Tab.Screen name='Hesabım' component={Hesabım} />
         </Tab.Navigator>
       </NavigationContainer>
     </SafeAreaView>

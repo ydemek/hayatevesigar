@@ -1,8 +1,13 @@
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
 import OptionButton from '../components/optionButton';
 
-export default function SaglıkDurumu() {
+/* function HomeScreen({ navigation }) {
+  return <HomeScreen />;
+} */
+
+export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}> Merhaba</Text>
