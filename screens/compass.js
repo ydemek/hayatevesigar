@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
-export default function Yakınlarım() {
+export default function Compass() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}> Merhaba Yakınlarım</Text>

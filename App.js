@@ -3,12 +3,11 @@ import { View, Text, Button, StyleSheet, SafeAreaView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from './screens/saglıkDurumu';
-import Yogunluk from './screens/yogunluk';
-import Yakınlarım from './screens/yakınlarım';
-import Hesabım from './screens/hesabım';
+import HomeScreen from './screens/homeScreen';
+import Density from './screens/density';
+import Compass from './screens/compass';
+import Account from './screens/account';
 import { FontAwesome } from '@expo/vector-icons';
-import DailyDatas from './screens/yogunluk';
 
 const Tab = createBottomTabNavigator();
 
@@ -17,12 +16,12 @@ function App() {
     <SafeAreaView style={{ flex: 1, backgroundColor: 'black' }}>
       <NavigationContainer>
         <Tab.Navigator
-          initialRouteName='Sağlık Durumu'
+          initialRouteName='Ana Sayfa'
           screenOptions={({ route }) => ({
             tabBarIcon: ({ focused, color, size }) => {
               let iconname;
               switch (route.name) {
-                case 'Sağlık Durumu':
+                case 'Ana Sayfa':
                   iconname = 'heartbeat';
                   break;
                 case 'Yoğunluk':
@@ -39,10 +38,10 @@ function App() {
             },
           })}
         >
-          <Tab.Screen name='Sağlık Durumu' component={HomeScreen} />
-          <Tab.Screen name='Yoğunluk' component={Yogunluk} />
-          <Tab.Screen name='Yakınlarım' component={Yakınlarım} />
-          <Tab.Screen name='Hesabım' component={Hesabım} />
+          <Tab.Screen name='Ana Sayfa' component={HomeScreen} />
+          <Tab.Screen name='Yoğunluk' component={Density} />
+          <Tab.Screen name='Yakınlarım' component={Compass} />
+          <Tab.Screen name='Hesabım' component={Account} />
         </Tab.Navigator>
       </NavigationContainer>
     </SafeAreaView>

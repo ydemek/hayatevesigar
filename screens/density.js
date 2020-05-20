@@ -44,7 +44,7 @@ function Item({ title, value }) {
   );
 }
 
-export default function Yogunluk() {
+export default function Density() {
   return (
     <SafeAreaView style={styles.container}>
       <Text

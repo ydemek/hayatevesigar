@@ -30,7 +30,7 @@ function Item({ title, value }) {
     </View>
   );
 }
-export default function Hesabım() {
+export default function Account() {
   return (
     <SafeAreaView style={{ flex: 1, marginTop: 35 }}>
       <FlatList
