@@ -7,11 +7,11 @@ import {
   View,
 } from 'react-native';
 
-export default function OptionButton() {
+export default function OptionButton(props) {
   return (
     <View style={styles.container}>
       <TouchableOpacity>
-        <Text style={styles.txt}> iyiyim.dfsadffasdf </Text>
+        <Text style={styles.txt}> {props.name} </Text>
       </TouchableOpacity>
     </View>
   );

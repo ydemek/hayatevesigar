@@ -35,9 +35,6 @@ const DATA = [
   },
 ];
 
-/* function Yogunluk({ navigation }) {
-  return <Yogunluk />;
-} */
 function Item({ title, value }) {
   return (
     <View style={styles.item}>
