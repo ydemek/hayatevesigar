@@ -18,7 +18,7 @@ function App() {
         <Tab.Navigator
           initialRouteName='Ana Sayfa'
           screenOptions={({ route }) => ({
-            tabBarIcon: ({ focused, color, size }) => {
+            tabBarIcon: ({ focused = false, color, size }) => {
               let iconname;
               switch (route.name) {
                 case 'Ana Sayfa':

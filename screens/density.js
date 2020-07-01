@@ -1,7 +1,7 @@
 import React from 'react';
 import { SafeAreaView, View, FlatList, StyleSheet, Text } from 'react-native';
 import Constants from 'expo-constants';
-
+import axios from 'axios';
 const DATA = [
   {
     id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
@@ -43,6 +43,27 @@ function Item({ title, value }) {
     </View>
   );
 }
+
+//var axios = require('axios');
+var config = {
+  method: 'get',
+  url: 'https://api.covid19api.com/summary',
+  headers: {},
+};
+var resp;
+axios(config)
+  .then(function (response) {
+    resp = JSON.stringify(response.data);
+    //console.log(JSON.stringify(response.data));
+    // JSON.stringify(resp);
+    console.log('00000000000000000');
+    console.log(resp);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
+//console.log(resp);
 
 export default function Density() {
   return (
