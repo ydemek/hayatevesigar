@@ -6,6 +6,7 @@ Life fits home app clone with react native.
 
 ## :camera: Screenshots
 
+<img src="screenshots/1.png" height ="33%" width="32%"></img>
 <img src="screenshots/2.png" height ="33%" width="32%"></img>
 <img src="screenshots/3.png" height ="33%" width="32%"></img>
 <img src="screenshots/4.png" height ="33%" width="32%"></img>
@@ -14,3 +15,4 @@ Life fits home app clone with react native.
 <img src="screenshots/7.png" height ="33%" width="32%"></img>
 <img src="screenshots/8.png" height ="33%" width="32%"></img>
 <img src="screenshots/9.png" height ="33%" width="32%"></img>
+<img src="screenshots/10.png" height ="33%" width="32%"></img>
